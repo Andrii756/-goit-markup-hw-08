@@ -1,3 +1,79 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.list {
+  color: #000000;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*  */
+/* @import "./components/page-header"; */
+/* @import "./components/hero"; */
+/* @import "./components/modal"; */
+/* @import "./components/modal-form"; */
+/* @import "./components/button-navigation"; */
+/* @import "./components/projects"; */
+/* @import "./components/overlay"; */
 /* .feature {
     padding-bottom: 0px;
 }
@@ -106,29 +182,36 @@
 }
  */
 .feature {
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
-.peculiarities__item {
-    
 
-    @media screen and (max-width: 480px){
-        min-width: 450px;
-        min-height: 120px;
-
-    }
-
-    &:nth-child(4n) {
-        margin: 0px;
-    }
-}
-.peculiarities__position {
-    background-color: #f5f4fa;
-    margin-bottom: 30px;
-
+@media screen and (max-width: 480px) {
+  .peculiarities__item {
     min-width: 450px;
     min-height: 120px;
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
+  }
 }
+
+.peculiarities__item:nth-child(4n) {
+  margin: 0px;
+}
+
+.peculiarities__position {
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  min-width: 450px;
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* @import "./components/comands"; */
+/* @import "./components/footer"; */
+/*# sourceMappingURL=main.css.map */
