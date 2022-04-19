@@ -3,13 +3,16 @@ body {
     color: $color-text;
     font-family: $primary-font-family;
 }
-.main-nav {
-        display: flex;
-     
-    @media screen and(max-width :767px){
+.container{
+    @media screen and(max-width :767px) {
         position: relative;
         align-items: center;
     }
+
+}
+.main-nav {
+        display: flex;
+  
     
 }
 .logo {
@@ -19,6 +22,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
     
     &--blue{
         color: #2196f3;
@@ -29,18 +33,33 @@ body {
     &--white{
         color: #ffffff;
     }
+    @media screen and(max-width:767px){
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+    @media screen and(min-width:768px) {
+        margin-bottom: 26px;
+        margin-top: 26px;
+    }
 }
-.menu-button{
+.menu-button{ 
+    @media screen and(max-width:767px) {
+    position: absolute;
+    top: 10%;
+    right: 10%;
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
     
-    
-}
-.menu-button .icon-menu{
-    display: none;
+    & .icon-menu {
+        display: none;
+    }
+    }
+    @media screen and(min-width:768px) {
+        display: none;
+    }
 }
 .menu-button.is-open .icon-menu{
     display: block;
@@ -61,7 +80,7 @@ body {
         display: none;
         position: absolute;
         top:100%;
-        left: 0;
+        left: 0%;
         width: 100%;
 
     &.is-open{
@@ -111,9 +130,11 @@ body {
 
     }
 }
-/* .border {
-    border: 1px solid #ececec;
-} */
+.border {
+    @media screen and(min-width:768px) {
+        border: 1px solid #ececec;
+    }
+}
 
 .contact {
     display: flex;
