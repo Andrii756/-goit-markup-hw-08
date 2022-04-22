@@ -2,10 +2,10 @@ footer {
   background-color: $second-background;
   padding-top: 60px;
   padding-bottom: 60px;
-  
+  @media screen and (max-width:1199px){
     align-items: center;
     text-align: center;
-
+  }
 }
 
 .footer__item {
@@ -59,11 +59,14 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 
   display: flex;
-    justify-content: center;
+    
   
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 8px;
 
+  @media screen and (max-width:1199px) {
+    justify-content: center;
+  }
   &:focus,
   &:hover {
     color: $focus-color;
