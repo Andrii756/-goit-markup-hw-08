@@ -8,7 +8,7 @@
   z-index: 2;
 
 
-  overflow-y: scroll;
+  overflow: auto;
 
   opacity: 1;
 
@@ -48,6 +48,12 @@
   @media screen and(min-width:480px){
     width: 450px;
     height: 609px;
+
+  }
+  @media screen and(min-width:768px) {
+    width: 450px;
+    height: 609px;
+    
 
   }
   @media screen and(min-width:1200px) {
