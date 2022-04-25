@@ -6,18 +6,31 @@
     background-image: linear-gradient(to top,
         rgba(0, 0, 0, 0.25),
         rgba(0, 0, 0, 0.25)),
-    url(../images/bcg.jpg);
+    url(../images/bcg.jpg );
     max-width: 1200px;
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+            background-image:linear-gradient(to top,
+                rgba(0, 0, 0, 0.25),
+                rgba(0, 0, 0, 0.25)),
+            url(../images/bcg@2x.jpg );
+            max-width: 1200px;
+            background-repeat: repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    
 
     @media screen and (min-width:1200px){
         padding-bottom: 200px;
         padding-top: 200px;
 
     }
-    
 }
 
 .servis__text {
