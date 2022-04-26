@@ -268,10 +268,6 @@ body {
   }
 }
 
-.contact {
-  margin-right: 30px;
-}
-
 @media screen and (max-width: 767px) {
   .contact {
     display: -webkit-box;
@@ -281,8 +277,9 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-top: auto;
-    margin-left: 25px;
+    /* margin-top: 145px;
+    margin-left: 25px; */
+    margin: auto;
   }
 }
 
@@ -297,6 +294,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: 30px;
   }
 }
 
@@ -369,7 +367,6 @@ body {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  text-align: center;
   margin-top: 64px;
 }
 
