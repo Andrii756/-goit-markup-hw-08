@@ -29,7 +29,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 448px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -202,7 +202,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
+    margin-left: 63px;
   }
 }
 
@@ -283,9 +283,11 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
-    margin: auto;
+    margin-left: 69px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -295,6 +297,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-right: 30px;
+    margin: auto;
   }
 }
 
@@ -331,6 +334,8 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__item {
+    line-height: 1.17;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 }
@@ -817,7 +822,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .navigation-button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -869,6 +874,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .project__card {
@@ -897,7 +903,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .project__card {
-    width: calc((100% - 4 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
   }
 }
@@ -910,7 +916,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .project__card {
-    width: calc((100% - 6 * 30px) / 3);
+    width: calc((100% - 3 * 30px) / 3);
   }
   .project__card:nth-child(3n) {
     margin-right: 0px;
@@ -1477,10 +1483,6 @@ footer {
   vertical-align: top;
 }
 
-.footer__item:not(:last-child) {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 768px) {
   .footer__item {
     display: inline-block;
@@ -1490,8 +1492,13 @@ footer {
     margin-bottom: 0px;
   }
   .footer__item:not(:last-child) {
-    margin-bottom: 60px;
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__item:not(:last-child) {
+    margin-bottom: 60px;
   }
 }
 

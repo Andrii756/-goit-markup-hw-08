@@ -11,10 +11,8 @@ footer {
 .footer__item {
   white-space: normal;
   vertical-align: top;
-  &:not(:last-child) {
-    margin-bottom: 60px;
-  }
-  @media screen and(min-width:768px){
+
+  @media screen and(min-width:768px) {
     display: inline-block;
     
     &:nth-child(2n) {
@@ -22,9 +20,14 @@ footer {
     margin-bottom: 0px;
     }
     &:not(:last-child) {
-      margin-bottom: 60px;
+   
       display: inline-block;
 
+  }
+  @media screen and(max-width:1199px) {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
   }
   @media screen and(min-width:1200px) {
