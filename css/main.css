@@ -37,7 +37,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -989,6 +989,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: -15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1002,16 +1003,14 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .company__item {
-    margin-right: 15px;
-    margin-bottom: 15px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .company__item:nth-child(3n) {
-    margin-right: 0px;
+  .company__item {
+    margin: 15px;
+    /* @media screen and(max-width:1199px) {
+            &:nth-child(3n) {
+            margin-right: 0px;
+            }
+        } */
   }
 }
 
@@ -1145,25 +1144,19 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .peculiarities__item {
     min-width: 450px;
     min-height: 120px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .peculiarities__item {
-    min-width: 354px;
-    min-height: 101px;
-    -ms-flex-preferred-size: calc((100% -120px) / 2);
-        flex-basis: calc((100% -120px) / 2);
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .peculiarities__item {
-    margin-top: 15px;
+    width: calc((100% - 2 * 30px)/2);
+    min-height: 120px;
+    /* flex-basis: calc((100% -120px) / 2); */
+    margin: 15px;
   }
 }
 
@@ -1205,7 +1198,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .peculiarities__position {
-    max-width: 354px;
+    /* max-width: 354px; */
     height: 120px;
   }
 }
@@ -1396,8 +1389,6 @@ body {
 @media screen and (min-width: 768px) {
   .team-photo__item {
     width: 354px;
-    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
-        flex-basis: calc((100% - 4 * 30px) / 2);
     margin: 15px;
   }
 }
