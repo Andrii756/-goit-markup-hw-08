@@ -113,6 +113,9 @@ header{
 
     &.is-open {
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
     }
 }
@@ -193,10 +196,9 @@ header{
     
     display: flex;
     flex-direction: column-reverse;
-    /* margin-top: 145px;
-    margin-left: 25px; */
+
     margin-left: 15px;
-    margin-top: 125px;
+    
     }
     @media screen and(min-width:768px) and(max-width:1199px) {
     margin-left: 69px;
@@ -269,6 +271,13 @@ header{
         display: none;
 }
 }
+.contact__block {
+    @media screen and(min-width:768px) {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    }
+}
 .social-media{
     font-family: 'Roboto';
     font-style: normal;
@@ -278,6 +287,7 @@ header{
     letter-spacing: 0.02em;
 
     margin-top: 64px;
+    margin-bottom: 48px;
 
     @media screen and(min-width:768px) {
         display: none;
